@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+				<h1>React</h1>
+				<h3>A JavaScript library for building user interfaces</h3>
+				<p>
+					<small>Presentation created by <a href="https://github.com/Vola-G">Hrakholskaya Volha</a> for RS
+						School presentation task.</small>
+				</p>
+			</section>
+
+			<section>
+				<section>
+					<h2>What is React?</h2>
+				</section>
+				<section>
+					<p>React is a JavaScript library developed by Facebook for building composable user interfaces.
+					</p>
+				</section>
+			</section>
+
+
+
+			<section>
+				<section id="fragments">
+					<h2>React Advantages:</h2>
+					<ul>
+						<li class="fragment">Easy to learn.</li>
+						<li class="fragment">Improved readability.</li>
+						<li class="fragment">Make developing faster.</li>
+						<li class="fragment">Support and updates.</li>
+					</ul>
+				</section>
+
+
+			</section>
+			</section>
+			<section>
+				<h2>React Features</h2>
+			</section>
+
+			<section id="fragments">
+				<section>
+					<h2>JSX (JavaScript XML)</h2>
+					<h5>JavaScript syntax extension.</h5>
+					<img src="assets/jsx.png">
+					<ul>
+						<li class="fragment">It makes easier and faster to write templates on React;</li>
+						<li class="fragment">Type-safe;</li>
+						<li class="fragment">Make optimization while compiling code to JavaScript.</li>
+					</ul>
+				</section>
+			</section>
+				
+			<section id="fragments">
+				<section>
+					<h2>Components</h2>
+					<p>Components are isolated reusable pieces of UI elements</p>
+					<img src="assets/react-component-tree.png" width="70%">
+				</section>
+				<section>
+						<h3>Function and Class Components</h3>
+						<p>The simplest way to define a component is to write a JavaScript function:</p>
+						<img src="assets/Func-comp.png">
+						<p>Or using ES6 class:</p>
+						<img src="assets/Class-comp.png">
+					</section>
+			</section>
+
+<section id="fragments">
+	<section>
+	<h3>Props & State</h3>
+	<p><strong>Props</strong> − sets by the parent and fixed throughout the lifetime of component.</p>
+	<img src="assets/props.png">
+	<p>As result: Hello, Sara</p>
+</section>
+	<section>
+			<p ><strong>State</strong> are used for data that is going to change.</p>
+			<img src="assets/State.png">
+		</section>
+</section>
+<section>
+	<section>
+	<h3>render()</h3>
+		<p >If you need to calculate something from the state or props, you can do it inside the render method. </p>
+	</section>
+	<section>
+			<h3>Virtual DOM</h3>
+				<p >Like the actual DOM, the Virtual DOM is a node tree with lists elements. </p>
+				<p>But faster ;)</p>
+			</section>
+	</section>
+<section>
+	<h3>The End :)</h3>
+</section>
+
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
